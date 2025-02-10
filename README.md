@@ -16,7 +16,7 @@ Repository: [https://github.com/PierrunoYT/calendar-hub](https://github.com/Pier
 
 - Node.js (v14.0.0 or higher)
 - npm (v6.0.0 or higher)
-- MongoDB (v4.0.0 or higher)
+- SQLite (v4.0.0 or higher)
 
 ## Installation
 
@@ -39,9 +39,9 @@ cd ../frontend
 npm install
 ```
 
-3. Create a `.env` file in the backend directory with your MongoDB connection string
+3. Create a `.env` file in the backend directory with your SQLite configuration. For example:
 ```
-MONGODB_URI=your_mongodb_connection_string
+DATABASE_URL=sqlite:./data/db.sqlite
 PORT=3001
 ```
 
@@ -64,9 +64,9 @@ cd ../frontend
 npm install
 ```
 
-3. Create a `.env` file in the backend directory with your MongoDB connection string
+3. Create a `.env` file in the backend directory with your SQLite configuration. For example:
 ```
-MONGODB_URI=your_mongodb_connection_string
+DATABASE_URL=sqlite:./data/db.sqlite
 PORT=3001
 ```
 
@@ -92,7 +92,7 @@ The application will be available at `http://localhost:3000`
 
 - Frontend runs on port 3000
 - Backend runs on port 3001
-- Make sure MongoDB is running before starting the backend server
+- Make sure SQLite is running before starting the backend server
 
 ## Building for Production
 
